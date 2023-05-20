@@ -53,6 +53,7 @@ body {
 
 .game__item {
   position: relative;
+  margin-top: 30px;
 }
 
 .game__item:not(:last-child) {
