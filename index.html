@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Игра в пары</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+
+  <script src="main.js" defer></script>
+  <script>
+  </script>
+</head>
+
+<body>
+
+  <div class="container">
+    <section class="game">
+
+      <h1 class="title-1">Игра в пары</h1>
+
+      <h2 class="title-2">Правила игры</h2>
+      <ul class="game__list">
+        <li class="game__item">
+          <p class="game__item-rule" title="Сколько пар для карт будет сгенерировано">
+            Количество пар
+          </p>
+          <input class="game__item-input" type="number" name="count" max="20" min="2" placeholder="Число пар" value="8">
+        </li>
+
+        <li class="game__item">
+          <p class="game__item-rule" title="Как долго будет видно карты перед началом игры">
+            Время на подготовку (сек)
+          </p>
+          <input class="game__item-input" type="number" name="timeoutGlobal" max="120" min="0" placeholder="Время" value="3">
+        </li>
+
+        <li class="game__item">
+          <p class="game__item-rule" title="Сколько времени отводится для завершения игры. Установите 0 чтобы таймера не было">
+            Таймер
+          </p>
+          <input class="game__item-input" type="number" name="timer" max="180" min="0" placeholder="Таймер" value="60">
+        </li>
+
+        <li class="game__item">
+          <button class="game__button" onclick="createGamePari()">
+            Начать игру
+          </button>
+        </li>
+      </ul>
+
+      <ul class="game__list">
+        <li class="game__item">
+          <input class="game__timer" type="text" name="displayTimer" value="Таймер" readonly>
+        </li>
+      </ul>
+
+
+      <ul class="game__card-list" id="game-field">
+      </ul>
+    </section>
+
+  </div>
+</body>
+
+</html>
