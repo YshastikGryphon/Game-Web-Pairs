@@ -277,3 +277,19 @@ body {
     background-color: red;
   }
 }
+
+@media (max-width: 900px) {
+  .game__card-item {
+    width: 30px;
+    height: 60px;
+    margin: 5px;
+    border-radius: 10px;
+  }
+  .game__card-inner {
+    font-size: 32px;
+  }
+  ..game__card-inner-2 {
+    font-size: 32px;
+  }
+   
+}
