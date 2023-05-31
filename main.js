@@ -243,7 +243,7 @@
     gameField.innerHTML = "";
 
     // Установка правил
-    if (inputCount.value > 0 && inputCount.value < 20) {
+    if (inputCount.value > 0 && inputCount.value < 30) {
       count = inputCount.value;
     }
     if ((inputTimeoutGlobal.value >= 0 && inputTimeoutGlobal.value < 120)) {
